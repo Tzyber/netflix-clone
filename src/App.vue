@@ -60,7 +60,7 @@ onMounted(() => {
         />
       </div>
       <div class="fixed z-30 bottom-0 right-0 w-full h-[55%] pl-[120px] overflow-y-auto">
-        <VideoCarousel class="pb-14 üt-14" category="Popular Movies " :movies="movies[0]"/>
+        <VideoCarousel class="pb-14 üt-14 mb-3 h-[90%]" category="Derzeit beliebt " :movies="movies[0]"/>
         <VideoCarousel class="pb-14 üt-14" category="Horror Movies " :movies="movies[1]"/>
         <VideoCarousel class="pb-14 üt-14" category="Featured Movies " :movies="movies[2]"/>
       </div>

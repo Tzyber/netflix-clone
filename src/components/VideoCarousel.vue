@@ -11,6 +11,7 @@ const {movie, showFullVideo} = storeToRefs(useMovie)
 let currentSlide = ref(0)
 const props = defineProps({category: String, movies: Array})
 const {movies, category} = toRefs(props)
+const movieLength = movies?.value?.length;
 
 const currentSlideObject = (slide, index) => {
   if (index === currentSlide.value)
@@ -32,6 +33,33 @@ const fullScreenVideo = (index) => {
     </div>
 
     <Carousel
+        v-if="movieLength === 3"
+        ref="carousel"
+        v-model="currentSlide"
+        :items-to-show="3"
+        :items-to-scroll="1"
+        :wrap-around="true"
+        :transition="500"
+        snapAlign="start"
+        class="bg-transparent h-[30%] w-[50%]"
+    >
+      <Slide v-for="(slide, index) in movies" :key="slide" class="flex items-center object-cover text-white bg-transparent" >
+
+        <div
+            @click="fullScreenVideo(index)"
+            class="object-cover h-[100%] hover:brightness-125 cursor-pointer"
+            :class="
+                        currentSlide !== index ? 'border-4 border-transparent' : 'border-4 border-white',
+                        currentSlideObject(slide, index)
+                    "
+        >
+          <img style="user-select: none" class=" object-cover pointer-events-none h-[100%] z-[-1]" :src="'/images/'+slide.name+'.png'">
+        </div>
+      </Slide>
+    </Carousel>
+
+    <Carousel
+        v-else
         ref="carousel"
         v-model="currentSlide"
         :items-to-show="8"
@@ -42,6 +70,7 @@ const fullScreenVideo = (index) => {
         class="bg-transparent"
     >
       <Slide v-for="(slide, index) in movies" :key="slide" class="flex items-center object-cover text-white bg-transparent" >
+
         <div
             @click="fullScreenVideo(index)"
             class="object-cover h-[100%] hover:brightness-125 cursor-pointer"
