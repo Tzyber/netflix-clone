@@ -39,7 +39,6 @@ const fullScreenVideo = (index) => {
         :items-to-show="3"
         :items-to-scroll="1"
         :wrap-around="true"
-        :transition="500"
         snapAlign="start"
         class="bg-transparent h-[30%] w-[50%]"
     >
@@ -47,7 +46,7 @@ const fullScreenVideo = (index) => {
 
         <div
             @click="fullScreenVideo(index)"
-            class="object-cover h-[100%] hover:brightness-125 cursor-pointer"
+            class="object-cover h-[85%] hover:brightness-125 cursor-pointer"
             :class="
                         currentSlide !== index ? 'border-4 border-transparent' : 'border-4 border-white',
                         currentSlideObject(slide, index)
