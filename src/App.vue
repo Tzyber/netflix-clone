@@ -10,16 +10,18 @@ import movies from './movies.json'
 
 import { useMovieStore } from './stores/movie'
 import { storeToRefs } from 'pinia';
-import MovieDetails from "@/components/MovieDetails.vue";
-import VideoCarousel from "@/components/VideoCarousel.vue";
-import NetflixIntro from "@/components/netflixIntro.vue";
+import NetflixIntro from "./components/netflixIntro.vue";
+import VideoCarousel from "./components/VideoCarousel.vue";
+import MovieDetails from "./components/MovieDetails.vue";
+
 
 const useMovie = useMovieStore()
-const { movie, showFullVideo } = storeToRefs(useMovie)
+const   { movie, showFullVideo } = storeToRefs(useMovie)
 const showLogo = ref(true)
+const  moviesList = ref()
 onMounted(() => {
   setTimeout(() => (showLogo.value = false), 4000);
-  setTimeout(() => (movie.value = movies[0][0]), 100);
+  setTimeout(() => (moviesList.value = movies[0][0]), 100);
 });
 </script>
 
