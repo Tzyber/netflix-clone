@@ -3,7 +3,7 @@
     Docunite
   </div>
   <audio ref="audioPlayer" controls style="display: none">
-    <source src="/audio/netflix_intro_kurz.mp3" type="audio/mpeg">
+    <source src="/audio/netflix_intro.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </template>
@@ -28,11 +28,14 @@ function playAudio() {
 
 
 <style  lang="scss">
-@function makelongshadow($length,$angle) {
-  $val: 0px 0px transparent;
+@function makelongshadow($length, $angle) {
+  $val: ();
+
   @for $i from 1 through $length {
-    $val: #{$val}, #{$i}px #{$i*$angle}px #aaa;
+    $shadow: $i * 1px $i * $angle * 1px #aaa;
+    $val: append($val, $shadow, comma);
   }
+
   @return $val;
 }
 
