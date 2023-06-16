@@ -60,12 +60,12 @@ onMounted(() => {
 
       </div>
       <div class="fixed z-30 bottom-0 right-0 w-full h-[55%] pl-[120px] overflow-y-auto">
-        <VideoCarousel class="pb-14 mb-8 üt-14  " category="Derzeit beliebt " :movies="movies[0]"/>
+        <VideoCarousel class="pb-14 mb-10 üt-14" category="Derzeit beliebt " :movies="movies[0]"/>
         <VideoCarousel class="pb-14 üt-14" category="Horror Movies " :movies="movies[1]"/>
         <VideoCarousel class="pb-14 üt-14" category="Featured Movies " :movies="movies[2]"/>
       </div>
     </div>
-    <div class="absolute z-20 h-[70%] left-[120px] w-[100%] right-0 bottom-0 bg-gradient-to-t from-black via-black" />
+    <div class="absolute z-20 h-[60%] left-[120px] w-[100%] right-0 bottom-0 bg-gradient-to-t from-black via-black" />
   </div>
 </template>
 
