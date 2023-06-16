@@ -1,14 +1,33 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-<div class="logo">
- Docunite
-</div>
+  <div class="logo">
+    Docunite
+  </div>
+  <audio ref="audioPlayer" controls style="display: none">
+    <source src="/audio/netflix_intro_kurz.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 </template>
 
-<style scoped lang="scss">
+<script setup>
+import { ref, onMounted } from 'vue';
+
+onMounted(() => {
+  setTimeout(() => {
+    playAudio();
+  }, 1000); // Verzögerung von 1 Sekunde (1000 Millisekunden)
+});
+
+const audioPlayer = ref(null);
+
+function playAudio() {
+  if (audioPlayer.value) {
+    audioPlayer.value.play();
+  }
+}
+</script>
+
+
+<style  lang="scss">
 @function makelongshadow($length,$angle) {
   $val: 0px 0px transparent;
   @for $i from 1 through $length {
@@ -20,6 +39,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
 
 .logo {
+  margin-top: 20%;
   text-align: center;
   font-family: 'Roboto';
   font-size: 12vmin;
