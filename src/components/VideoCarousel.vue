@@ -18,7 +18,7 @@ const currentSlideObject = (slide, index) => {
     movie.value = slide
 }
 
-const fullScreenVideo = (index) => {
+const selectedCard = (index) => {
   currentSlide.value = index
 
 }
@@ -44,7 +44,7 @@ const fullScreenVideo = (index) => {
     >
       <Slide v-for="(slide, index) in movies" :key="slide" class="flex items-center object-cover text-white bg-transparent" >
         <div
-            @click="fullScreenVideo(index)"
+            @click="selectedCard(index)"
             class="  object-fit h-[100%] hover:brightness-125 cursor-pointer ml-3"
             :class="[
     currentSlide !== index ? 'border-4 border-transparent' : 'border-4 border-white',
@@ -70,7 +70,7 @@ const fullScreenVideo = (index) => {
       <Slide v-for="(slide, index) in movies" :key="slide" class="flex items-center object-cover text-white bg-transparent" >
 
         <div
-            @click="fullScreenVideo(index)"
+            @click="selectedCard(index)"
             class="object-fit h-[100%] hover:brightness-125 cursor-pointer"
             :class="[
     currentSlide !== index ? 'border-4 border-transparent' : 'border-4 border-white',
