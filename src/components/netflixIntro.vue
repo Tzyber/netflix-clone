@@ -8,20 +8,20 @@
   </audio>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted } from 'vue';
 
 onMounted(() => {
   setTimeout(() => {
     playAudio();
-  }, 500); // Verzögerung von 1/2 Sekunde
+  }, 500); // Delay of 1/2 second
 });
 
-const audioPlayer = ref(null);
+const audioPlayer = ref<HTMLAudioElement | null>(null);
 
 function playAudio() {
   if (audioPlayer.value) {
-    audioPlayer.value.play();
+    (audioPlayer.value as HTMLAudioElement).play();
   }
 }
 </script>
