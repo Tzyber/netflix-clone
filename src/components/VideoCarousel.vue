@@ -40,19 +40,18 @@ const fullScreenVideo = (index) => {
         :items-to-scroll="1"
         :wrap-around="true"
         snapAlign="start"
-        class="bg-transparent h-[30%] w-[50%]"
+        class="bg-transparent  w-[50%] -mb-16 -ml-2"
     >
       <Slide v-for="(slide, index) in movies" :key="slide" class="flex items-center object-cover text-white bg-transparent" >
-
         <div
             @click="fullScreenVideo(index)"
-            class="object-cover h-[85%] hover:brightness-125 cursor-pointer"
+            class=" h-[100%] hover:brightness-125 cursor-pointer ml-3"
             :class="
                         currentSlide !== index ? 'border-4 border-transparent' : 'border-4 border-white',
                         currentSlideObject(slide, index)
                     "
         >
-          <img style="user-select: none" class=" object-cover pointer-events-none h-[100%] z-[-1]" :src="'/images/'+slide.name+'.png'">
+          <img alt="" style="user-select: none; min-height: 500px !important;" class=" object-cover pointer-events-none h-[100%] z-[-1]" :src="'/images/'+slide.name+'.png'">
         </div>
       </Slide>
     </Carousel>
@@ -72,13 +71,13 @@ const fullScreenVideo = (index) => {
 
         <div
             @click="fullScreenVideo(index)"
-            class="object-cover h-[100%] hover:brightness-125 cursor-pointer"
+            class="object-fit h-[100%] hover:brightness-125 cursor-pointer"
             :class="
                         currentSlide !== index ? 'border-4 border-transparent' : 'border-4 border-white',
                         currentSlideObject(slide, index)
                     "
         >
-          <img style="user-select: none" class=" object-cover pointer-events-none h-[100%] z-[-1]" :src="'/images/'+slide.name+'.png'">
+          <img alt="" style="user-select: none" class=" object-cover pointer-events-none h-[100%] z-[-1]" :src="'/images/'+slide.name+'.png'">
         </div>
       </Slide>
 

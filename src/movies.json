@@ -5,14 +5,14 @@
             "description": "In diesem Sci-Fi Drama blickt man hinter die Fassade von einem augenscheinlich normalen Investmentmanager, der eine schockierende realität entdeckt",
             "year": "2022",
             "genre": {
-                "one": "Drama",
-                "two": "Story",
-                "three": "Thriller"
+                "one": "Sci-Fi",
+                "two": "Drama",
+                "three": ""
             }
         },
         { 
-            "name": "All Quiet on the Western Front",
-            "description": "A young German soldier's terrifying experiences and distress on the western front during World War I.",
+            "name": "The first Asset Manager",
+            "description": "Der neue Asset Manager eines Immobilienunternehmens erlebt eine große Überraschung, als er nach und nach herausfindet, wofür er eigentlich engagiert wurde.",
             "year": "2022",
             "genre": {
                 "one": "Action",
@@ -21,8 +21,8 @@
             }
         },
         {
-            "name": "Avatar The Way of Water",
-            "description": "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.",
+            "name": "Under Control",
+            "description": "Um eine alte Schuld zu begleichen, überbringt ein Beteiligungsmanager eine Naricht, die alles verändern wird.",
             "year": "2022",
             "genre": {
                 "one": "Action",
@@ -51,16 +51,6 @@
                 "one": "Action",
                 "two": "Adventure",
                 "three": "Fantasy"
-            }
-        },
-        { 
-            "name": "Catch the Asset",
-            "description": "In diesem Sci-Fi Drama blickt man hinter die Fassade von einem augenscheinlich normalen Investmentmanager, der eine schockierende realität entdeckt",
-           "year": "2022",
-            "genre": {
-                "one": "Drama",
-                "two": "Story",
-                "three": "Thriller"
             }
         },
         { 
@@ -283,16 +273,6 @@
                 "one": "Action",
                 "two": "Adventure",
                 "three": "Fantasy"
-            }
-        },
-        { 
-            "name": "Catch the Asset",
-            "description": "In diesem Sci-Fi Drama blickt man hinter die Fassade von einem augenscheinlich normalen Investmentmanager, der eine schockierende realität entdeckt",
-            "year": "2022",
-            "genre": {
-                "one": "Drama",
-                "two": "Story",
-                "three": "Thriller"
             }
         },
         { 

@@ -5,8 +5,8 @@ defineProps({movie: Object})
 </script>
 
 <template>
-<div v-if="movie" class="z-40 text-white w-[53%] pt-20">
-  <span>{{movie.name}}</span>
+<div v-if="movie" class="z-40 text-white text-6xl w-[53%]  pt-20">
+  <h4>{{movie.name}}</h4>
   <div class="flex items-center text-lg pt-4">
     <span>{{movie.year}}</span>
     <div class="relative">
@@ -22,7 +22,7 @@ defineProps({movie: Object})
       <span class="pl-4">{{ movie.genre.three}}</span>
     </div>
   </div>
-  <div class="text-2xl pt-6">
+  <div class="text-2xl pt-6 flex-wrap">
     <span>{{ movie.description }}</span>
   </div>
   <div class="text-2xl pt-6 mt-5">
