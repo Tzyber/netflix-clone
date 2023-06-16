@@ -29,14 +29,14 @@ function playAudio() {
 
 <style  lang="scss">
 @function makelongshadow($length, $angle) {
-  $val: ();
+  $shadows: (); // Initialize an empty list to store the shadows
 
   @for $i from 1 through $length {
-    $shadow: $i * 1px $i * $angle * 1px #aaa;
-    $val: append($val, $shadow, comma);
+    $currentShadow: $i * 1px $i * $angle * 1px #aaa; // Calculate the shadow values
+    $shadows: append($shadows, $currentShadow, comma); // Add the current shadow to the list
   }
 
-  @return $val;
+  @return $shadows; // Return the list of shadows
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
