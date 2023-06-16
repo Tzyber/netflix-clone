@@ -10,6 +10,16 @@
                 "three": ""
             }
         },
+        {
+            "name": "Under Control2",
+            "description": "Um eine alte Schuld zu begleichen, überbringt ein Beteiligungsmanager eine Naricht, die alles verändern wird.",
+            "year": "2022",
+            "genre": {
+                "one": "Action",
+                "two": "Adventure",
+                "three": "Fantasy"
+            }
+        },
         { 
             "name": "The first Asset Manager",
             "description": "Der neue Asset Manager eines Immobilienunternehmens erlebt eine große Überraschung, als er nach und nach herausfindet, wofür er eigentlich engagiert wurde.",
@@ -19,18 +29,7 @@
                 "two": "Drama",
                 "three": "War"
             }
-        },
-        {
-            "name": "Under Control",
-            "description": "Um eine alte Schuld zu begleichen, überbringt ein Beteiligungsmanager eine Naricht, die alles verändern wird.",
-            "year": "2022",
-            "genre": {
-                "one": "Action",
-                "two": "Adventure",
-                "three": "Fantasy"
-            }
         }
-
     ],
     "1": [
         {

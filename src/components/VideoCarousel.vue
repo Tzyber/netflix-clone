@@ -40,12 +40,12 @@ const fullScreenVideo = (index) => {
         :items-to-scroll="1"
         :wrap-around="true"
         snapAlign="start"
-        class="bg-transparent  w-[50%] -mb-16 -ml-2"
+        class="bg-transparent  w-[50%] -mb-16 -ml-3"
     >
       <Slide v-for="(slide, index) in movies" :key="slide" class="flex items-center object-cover text-white bg-transparent" >
         <div
             @click="fullScreenVideo(index)"
-            class=" h-[100%] hover:brightness-125 cursor-pointer ml-3"
+            class="  object-fit h-[100%] hover:brightness-125 cursor-pointer ml-3"
             :class="
                         currentSlide !== index ? 'border-4 border-transparent' : 'border-4 border-white',
                         currentSlideObject(slide, index)
