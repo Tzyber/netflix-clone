@@ -12,21 +12,24 @@ import {useMovieStore} from './stores/movie'
 import {storeToRefs} from 'pinia';
 import MovieDetails from "@/components/MovieDetails.vue";
 import VideoCarousel from "@/components/VideoCarousel.vue";
+import NetflixIntro from "@/components/netflixIntro.vue";
 
 const useMovie = useMovieStore()
 const {movie, showFullVideo} = storeToRefs(useMovie)
-
+const showLogo = ref(true)
 onMounted(() => {
-  setTimeout(() => movie.value = movies[0][0], 100)
+  setTimeout(() =>  showLogo.value = false, 2000)
+  setTimeout(() => (movie.value = movies[0][0]), 100)
 })
 
 
 </script>
 
 <template>
-  <div class="fixed w-full h-screen bg-black">
+  <netflix-intro v-if="showLogo == true" class="tesst"></netflix-intro>
+  <div v-if="showLogo == false" class="fixed w-full h-screen bg-black">
     <div v-if="!showFullVideo" id="SideNav" class="flex z-40 items-center w-[120px] h-screen bg-black relative">
-      <img alt="logo" class="absolute top-0 w-[60px] mt-10 ml-10" src="./assets/docunitelogo.png">
+      <img alt="logo" class="absolute top-0 w-[60px] mt-10 ml-10" src="../public/docunitelogo.png">
       <div>
         <div class="py-2 mx-10 my-6">
           <Magnify fillColor="#FFFFFF" :size="40" class="cursor-pointer"/>
@@ -69,6 +72,16 @@ onMounted(() => {
   </div>
 </template>
 
-<style scoped>
+<style lang="scss">
+body{
+  background: black !important;
+}
+
+.tesst{
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 </style>
