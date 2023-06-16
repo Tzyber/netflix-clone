@@ -57,6 +57,7 @@ onMounted(() => {
           <div class="absolute z-30 h-[900px] left-[120px] w-95%] right-0 top-0 bg-gradient-to-r from-black via-black" />
           <MovieDetails v-if="movie" :movie="movie"/>
           <img
+              alt=""
               v-if="movie"
               :src="`/images/${movie.name}.png`"
               class="absolute z-0 h-[800px] right-0 top-0 opacity-90"
