@@ -26,7 +26,7 @@ onMounted(() => {
 <template>
   <div class="fixed w-full h-screen bg-black">
     <div v-if="!showFullVideo" id="SideNav" class="flex z-40 items-center w-[120px] h-screen bg-black relative">
-      <img alt="logo" class="absolute top-0 w-[60px] mt-10 ml-10" src="./assets/docunite_logo_white_350%20(1).png">
+      <img alt="logo" class="absolute top-0 w-[60px] mt-10 ml-10" src="./assets/docunitelogo.png">
       <div>
         <div class="py-2 mx-10 my-6">
           <Magnify fillColor="#FFFFFF" :size="40" class="cursor-pointer"/>

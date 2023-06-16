@@ -72,10 +72,7 @@ const fullScreenVideo = (index) => {
         <div
             @click="fullScreenVideo(index)"
             class="object-fit h-[100%] hover:brightness-125 cursor-pointer"
-            :class="
-                        currentSlide !== index ? 'border-4 border-transparent' : 'border-4 border-white',
-                        currentSlideObject(slide, index)
-                    "
+            :class="currentSlide !== index ? 'border-4 border-transparent' : 'border-4 border-white'"
         >
           <img alt="" style="user-select: none" class=" object-cover pointer-events-none h-[100%] z-[-1]" :src="'/images/'+slide.name+'.png'">
         </div>
