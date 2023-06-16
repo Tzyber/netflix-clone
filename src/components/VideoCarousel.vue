@@ -40,7 +40,7 @@ const fullScreenVideo = (index) => {
         :items-to-scroll="1"
         :wrap-around="true"
         snapAlign="start"
-        class="bg-transparent  w-[50%] -mb-16 -ml-3"
+        class="bg-transparent min-w[50%] w-[50%] -mb-16 -ml-3"
     >
       <Slide v-for="(slide, index) in movies" :key="slide" class="flex items-center object-cover text-white bg-transparent" >
         <div
