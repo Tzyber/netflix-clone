@@ -44,10 +44,10 @@ function playAudio() {
 .logo {
   margin-top: 20%;
   text-align: center;
-  font-family: 'Roboto';
+  font-family: 'Roboto',serif;
   font-size: 12vmin;
   font-weight: 700;
-  animation: netflix_style 3.5s ;
+  animation: netflix_style 4s ;
   outline: none;
   white-space: nowrap;
 }
@@ -63,9 +63,7 @@ function playAudio() {
     color:#e90418;
     transform: scale(1.5, 1.5);
   }
-  15% {
-    color:#e90418;
-  }
+
   20% {
     color:#e90418;
     text-shadow: none;

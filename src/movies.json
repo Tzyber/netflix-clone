@@ -33,6 +33,16 @@
     ],
     "1": [
         {
+            "name": "Catch the Asset",
+            "description": "In diesem Sci-Fi Drama blickt man hinter die Fassade von einem augenscheinlich normalen Investmentmanager, der eine schockierende realität entdeckt",
+            "year": "2022",
+            "genre": {
+                "one": "Sci-Fi",
+                "two": "Drama",
+                "three": ""
+            }
+        },
+        {
             "name": "All Quiet on the Western Front",
             "description": "A young German soldier's terrifying experiences and distress on the western front during World War I.",
             "year": "2022",
@@ -164,6 +174,16 @@
         }
     ],
     "2": [
+        {
+            "name": "Catch the Asset",
+            "description": "In diesem Sci-Fi Drama blickt man hinter die Fassade von einem augenscheinlich normalen Investmentmanager, der eine schockierende realität entdeckt",
+            "year": "2022",
+            "genre": {
+                "one": "Sci-Fi",
+                "two": "Drama",
+                "three": ""
+            }
+        },
         { 
             "name": "The Batman",
             "description": "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
