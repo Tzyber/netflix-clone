@@ -14,7 +14,7 @@ import { ref, onMounted } from 'vue';
 onMounted(() => {
   setTimeout(() => {
     playAudio();
-  }, 1000); // Verzögerung von 1 Sekunde (1000 Millisekunden)
+  }, 500); // Verzögerung von 1/2 Sekunde
 });
 
 const audioPlayer = ref(null);
