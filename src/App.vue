@@ -50,12 +50,12 @@ onMounted(() => {
     </div>
     <div v-if="!showFullVideo">
       <div class="fixed flex z-20 top-0 right-0 w-full h-[50%] bg-black pl-[120px] bg-clip-border">
-        <div class="absolute z-30 h-[900px] left-[120px] w-[77%] right-0 top-0 bg-gradient-to-r from-black via-black" />
+        <div class="absolute z-30 h-[900px] left-[120px] w-95%] right-0 top-0 bg-gradient-to-r from-black via-black" />
         <MovieDetails v-if="movie" :movie="movie"/>
         <img
             v-if="movie"
             :src=" '/images/'+movie.name+'.png'  "
-            class="absolute z-0 h-[800px] right-0 top-0"
+            class="absolute z-0 h-[800px] right-0 top-0 opacity-90	"
         />
 
       </div>
