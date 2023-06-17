@@ -10,7 +10,7 @@
           class="flex items-start justify-center min-h-screen pt-24 text-center"
       >
         <div
-            class="bg-black rounded-lg text-left overflow-hidden shadow-xl p-8 w-[35%]"
+            class="bg-black rounded-lg text-left overflow-hidden shadow-xl p-2 w-[35%]"
             role="dialog"
             ref="modal"
             aria-modal="true"
@@ -39,7 +39,7 @@
             </button>
           </div>
           <!--      Image and play Button    -->
-          <div class="text-2xl pt-6 mt-5 w-[100%] grid justify-center">
+          <div class="text-2xl w-[100%] grid justify-center">
             <img
                 alt=""
                 v-if="movie"
@@ -70,6 +70,14 @@
               <span>{{ movie.description }}</span>
             </div>
           </div>
+          <div class="z-40 text-2xl text-white mt-5">
+            <span>Folgen</span>
+          </div>
+          <div class="z-40 text-white mt-2">
+            <span>Staffel 1: <span class="border-2" >18</span></span>
+          </div>
+          <hr
+              class=" mt-3 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
           <!--      Movie Details    -->
         </div>
       </div>
