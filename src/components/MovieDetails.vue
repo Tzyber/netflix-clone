@@ -1,5 +1,6 @@
 <script setup lang="ts">
-
+import ModalDialog from "./ModalDialog.vue";
+import {ref} from "vue";
 
 defineProps({
   movie: {
@@ -10,9 +11,21 @@ defineProps({
     required: true,
   },
 });
+
+const showModal = ref(false)
+
+function showModalDialog() {
+   showModal.value = true
+}
+
+function closeModal() {
+  showModal.value = false;
+}
+
 </script>
 
 <template>
+  <modal-dialog v-if="showModal"  :movie="movie" @closeDialog="closeModal"></modal-dialog>
   <div v-if="movie" class="z-40 text-white text-6xl w-[40%] pt-20">
     <h4>{{ movie.name }}</h4>
     <div class="flex items-center text-lg pt-4">
@@ -39,7 +52,7 @@ defineProps({
         </svg>
         <span class="ml-3">Abspielen</span>
       </button>
-      <button class="bg-gray-300 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded inline-flex items-center ml-3">
+      <button  @click="showModalDialog"  class="bg-gray-300 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded inline-flex items-center ml-3">
         <svg viewBox="0 0 24 24" height="20px" width="20px" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
