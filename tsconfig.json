@@ -3,7 +3,7 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
-    "strict": true,
+    "strict": false,
     "jsx": "preserve",
     "importHelpers": true,
     "resolveJsonModule": true,
@@ -11,14 +11,12 @@
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": false,
     "lib": ["esnext", "dom"],
-    "composite": true,
+    "composite": true
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "dist"
   ]
 }
