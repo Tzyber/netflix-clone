@@ -5,7 +5,7 @@ import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import router from './router'
 
 import './assets/main.css'
-import App from "@/App.vue";
+import App from "./App.vue";
 
 const app = createApp(App)
 
