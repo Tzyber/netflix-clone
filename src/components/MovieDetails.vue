@@ -27,7 +27,7 @@ function closeModal() {
 <template>
   <modal-dialog v-if="showModal"  :movie="movie" @closeDialog="closeModal"></modal-dialog>
   <div v-if="movie" class="z-40 text-white text-6xl w-[40%] pt-20">
-    <h4>{{ movie.name }}</h4>
+    <h4>{{ movie.name.replace(/ /g, '-') }}</h4>
     <div class="flex items-center text-lg pt-4">
       <span>{{ movie.year }}</span>
       <div v-for="genre in movie.genre" :key="genre" class="relative">
