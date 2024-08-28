@@ -1,6 +1,6 @@
 # netflix-clone
 
-Watch Demo : https://github.com/Tzyber/netflix-clone
+Watch Demo : https://tzyber.github.io/netflix-clone/
 
 ## Recommended IDE Setup
 
