@@ -51,7 +51,7 @@ const selectedCard = (index) => {
     currentSlideObject(slide, index)
   ]"
         >
-          <img alt="" style="user-select: none; min-height: 500px !important;" class=" object-cover pointer-events-none h-[100%] z-[-1]" :src="'/images/'+slide.name.replace(/ /g, '-')+'.png'">
+          <img alt="" style="user-select: none; min-height: 500px !important;" class=" object-cover pointer-events-none h-[100%] z-[-1]" :src="'/images/'+slide.name.replace(/ /g, '-')+'.png'">>
         </div>
       </Slide>
     </Carousel>

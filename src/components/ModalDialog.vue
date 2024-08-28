@@ -45,7 +45,7 @@
             <img
                 alt=""
                 v-if="movie"
-                :src="`/images/${movie.name}.png`"
+                :src="'/netflix-clone/images/'+ movie.name.replace(/ /g, '-')+'.png'"
                 class="relative z-0 h-[500px] right-0 top-0   "
             />
             <div class="flex flex-row ">

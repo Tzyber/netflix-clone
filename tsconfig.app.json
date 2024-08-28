@@ -1,13 +1,15 @@
-// tsconfig.app.json
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "composite": true, 
+    "composite": true,
     "outDir": "./dist",
     "rootDir": "./src",
     "noEmit": false
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ],
   "references": [
     {
       "path": "./tsconfig.json"
