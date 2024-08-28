@@ -101,7 +101,7 @@
           <hr
               class=" mt-3 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50"/>
           <div class=" flex mt-5 flex-row">
-            <img class="h-auto max-w-xs" :src="`/images/${movie.name}.png`" alt="image description">
+            <img class="h-auto max-w-xs" :src="`/netflix-clone/images/${movie.name}.png`" alt="image description">
             <span class="grid text-white text-lg ml-2 pt-10 mb-6">Doppeltes Spiel: Teil 1
                <span class="text-white text-xs ml-0.5 -mt-12">Nach seiner Beförderung zum Senior Partner einer renommierten New Yorker Kanzlei soll Harvey Specter einen Harvard-Absolventen für die Kanzlei einstellen.</span>
             </span>
@@ -110,7 +110,7 @@
           <hr
               class=" mt-3 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50"/>
           <div class=" flex mt-5 flex-row mb-3">
-            <img class="h-auto max-w-xs" :src="`/images/${movie.name}.png`" alt="image description">
+            <img class="h-auto max-w-xs" :src="`/netflix-clone/images/${movie.name}.png`" alt="image description">
             <span class="grid text-white text-lg pt-10 ml-2 mb-6">Doppeltes Spiel: Teil 2
                <span class="text-white text-xs  -mt-12 ml-0.5">Statt eines Harvard-Absolventen stellt Harvey den Uni-Abbrecher Mike Ross ein. Der Fahrradbote hat ein fotografisches Gedächtnis und ist ein juristisches Naturtalent.</span>
             </span>
