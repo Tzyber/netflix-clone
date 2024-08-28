@@ -59,7 +59,7 @@ onMounted(() => {
           <img
               alt=""
               v-if="movie"
-              :src="'/images/'+ movie.name.replace(/ /g, '-')+'.png'"
+              :src="'/netflix-clone/images/'+slide.name.replace(/ /g, '-')+'.png'"
               class="absolute z-0 h-[800px] right-0 top-0 opacity-90"
           />
         </div>
