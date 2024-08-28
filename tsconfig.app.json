@@ -7,6 +7,9 @@
     "noEmit": false
   },
   "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
   ],
   "references": [
     {
