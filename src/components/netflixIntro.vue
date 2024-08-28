@@ -1,11 +1,7 @@
 <template>
   <div class="logo">
-    Docunite
+    WatchFlix
   </div>
-  <audio ref="audioPlayer" controls style="display: none">
-    <source src="/audio/netflix_intro.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
 </template>
 
 <script setup lang="ts">
@@ -14,7 +10,7 @@ import { ref, onMounted } from 'vue';
 onMounted(() => {
   setTimeout(() => {
     playAudio();
-  }, 500); // Delay of 1/2 second
+  }, 500);
 });
 
 const audioPlayer = ref<HTMLAudioElement | null>(null);
@@ -29,14 +25,14 @@ function playAudio() {
 
 <style  lang="scss">
 @function makelongshadow($length, $angle) {
-  $shadows: (); // Initialize an empty list to store the shadows
+  $shadows: ();
 
   @for $i from 1 through $length {
-    $currentShadow: $i * 1px $i * $angle * 1px #aaa; // Calculate the shadow values
-    $shadows: append($shadows, $currentShadow, comma); // Add the current shadow to the list
+    $currentShadow: $i * 1px $i * $angle * 1px #aaa;
+    $shadows: append($shadows, $currentShadow, comma);
   }
 
-  @return $shadows; // Return the list of shadows
+  @return $shadows;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:700,900');

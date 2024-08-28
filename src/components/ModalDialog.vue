@@ -50,7 +50,7 @@
             />
             <div class="flex flex-row ">
               <button
-                  style="bottom: 100px;"
+                  style="bottom: 100px; width: 30%;"
                   class=" z-[500] relative w-[25%] ml-4 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
                 <svg fill="#000000" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.804 17.804" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>

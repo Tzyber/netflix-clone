@@ -30,7 +30,6 @@ onMounted(() => {
   <netflix-intro v-if="showLogo" class="onLoading"></netflix-intro>
   <div v-if="!showLogo" class="fixed w-full h-screen bg-black">
     <div v-if="!showFullVideo" id="SideNav" class="flex z-40 items-center w-[120px] h-screen bg-black relative">
-      <img alt="logo" class="absolute top-0 w-[60px] mt-10 ml-8" src="/docunitelogo.png">
       <div>
         <div class="py-2 mx-10 my-6">
           <Magnify fillColor="#FFFFFF" :size="40" class="cursor-pointer"/>
