@@ -1,6 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*::-webkit-scrollbar {
 
+:root {
+  --void: #05070f;
+  --panel: #0a0e1c;
+  --hairline: rgba(140, 155, 220, 0.14);
+  --ink: #eaecf6;
+  --ink-dim: #a8aec7;
+  --signal: #7c8cff;
+  --aurora-teal: #4fd6c4;
+  --aurora-pink: #ff5c9a;
+}
+
+html,
+body {
+  background: var(--void);
+  color: var(--ink);
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+/* Schmaler, gedämpfter Scrollbalken im Deep-Space-Stil */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--hairline);
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 140, 255, 0.4);
+}
+
+/* vue3-carousel: Navigation auf Signal-Farbe statt Weiß */
+.carousel__prev,
+.carousel__next {
+  color: var(--signal) !important;
+  background: rgba(10, 14, 28, 0.7) !important;
+  border: 1px solid var(--hairline) !important;
+  border-radius: 999px !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+.carousel__prev:hover,
+.carousel__next:hover {
+  background: rgba(124, 140, 255, 0.18) !important;
+}
+.carousel__icon {
+  fill: currentColor !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
